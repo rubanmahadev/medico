@@ -1,0 +1,132 @@
+.mainContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 30px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type=text] {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input[type=text]:hover {
+    border: 1px solid grey;
+}
+
+input[type=password] {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+input[type=password]:hover {
+    border: 1px solid grey;
+}
+
+.reqText {
+    font-size: 12px;
+    margin: 2px 0px 0px 5px;
+    color: #CD5C5C;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+form .login-button {
+    background: none;
+    border: 1px solid #242424;
+    border-radius: 10px;
+    opacity: 0.8;
+    color: #242424;
+}
+
+.login-button:hover {
+    border: 2px solid #242424;
+}
+
+/* Media */
+@media screen and (min-width:1024px){
+    .container{
+        width: 450px;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:1023px){
+    .container{
+        width: 350px;
+    }
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #ffffff inset; /* background color */
+  -webkit-text-fill-color: #000000; /* text color */
+}
+
+/* radio */
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  font-family: sans-serif;
+}
+
+.radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.radio input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.radio input[type="radio"]::before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 4px;
+  left: 4px;
+  background-color: #007bff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
+.radio input[type="radio"]:checked::before {
+  transform: scale(1);
+}

@@ -1,0 +1,85 @@
+
+.mainContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 30px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type=text] {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 100%;
+}
+
+input[type=text]:hover {
+    border: 1px solid grey;
+}
+
+input[type=password] {
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+input[type=password]:hover {
+    border: 1px solid grey;
+}
+
+.reqText {
+    font-size: 12px;
+    margin: 2px 0px 0px 5px;
+    color: #CD5C5C;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+form .login-button {
+    background: none;
+    border: 1px solid #242424;
+    border-radius: 10px;
+    opacity: 0.8;
+    color: #242424;
+}
+
+.login-button:hover {
+    border: 2px solid #242424;
+}
+
+/* Media */
+@media screen and (min-width:1024px){
+    .container{
+        width: 450px;
+    }
+}
+
+@media screen and (min-width:350px) and (max-width:1023px){
+    .container{
+        width: 350px;
+    }
+}
