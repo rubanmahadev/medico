@@ -21,7 +21,7 @@ const Login: React.FC = () => {
 const [loading, setLoading] = useState<boolean>(false);
 const navigate = useNavigate();
 
-    const [userData, setUserData] = useState<any | null>(null);
+    // const [userData, setUserData] = useState<any | null>(null);
     const {
         register,
         handleSubmit,
@@ -43,7 +43,7 @@ const navigate = useNavigate();
     const userId = user.id;
     const accType = user.user_metadata?.accType;
 
-    setUserData(user);
+    // setUserData(user);
 
     // Route based on user type and metadata
     if (userType?.careTaker && accType === 'careTaker') {

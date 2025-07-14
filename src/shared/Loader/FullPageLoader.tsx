@@ -1,5 +1,4 @@
 // components/FullPageLoader.tsx
-import React from 'react';
 import { Circles } from 'react-loader-spinner';
 
 const FullPageLoader = () => {
