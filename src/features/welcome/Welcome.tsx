@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './welcome.module.css';
+import styles from './Welcome.module.css';
 import { useNavigate } from "react-router-dom";
 import { setUserType } from "../../core/userTypeservice";
 const Welcome:React.FC = ()=>{
