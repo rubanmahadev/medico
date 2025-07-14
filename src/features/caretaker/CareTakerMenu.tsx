@@ -10,6 +10,7 @@ import toast from 'react-hot-toast';
 import { useNavigate } from "react-router-dom";
 import emailjs from 'emailjs-com';
 import FullPageLoader from '../../shared/Loader/FullPageLoader';
+import logo from '../../assets/medicologo.png'
 
 const PatientMenu: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -424,7 +425,7 @@ const PatientMenu: React.FC = () => {
           <div>
             <h1 className="text-gray-800 flex items-start font-semibold gap-1">
               Medi
-              <img src="src/assets/medicologo.png" alt="" height="55px" width="55px" />
+              <img src={logo} alt="" height="55px" width="55px" />
               <span className="text-teal-500">Co</span>
             </h1>
             <p className="text-sm text-gray-500 tracking-wide ml-1 font-semibold">

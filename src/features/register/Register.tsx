@@ -9,6 +9,8 @@ import Swal from 'sweetalert2';
 import { registerUser } from "../../core/authService";
 import FullPageLoader from '../../shared/Loader/FullPageLoader';
 import toast from 'react-hot-toast';
+import logo from '../../assets/medicologo.png'
+import prevIcon from '../../assets/back-button.png'
 
 // import { toast } from 'react-hot-toast';
 type registerFormInputs = {
@@ -115,8 +117,11 @@ const Register: React.FC = () => {
         <div className={styles.mainContainer}>
             {loading && <FullPageLoader />}
             <div className=" flex flex-col items-center">
-                <div>
-                    <h1 className="flex items-start font-semibold gap-1" >Medi<img src="src/assets/medicoLogo.png" alt="" height="55px" width="55px" />Co</h1>
+                <div className="flex items-center gap-3">
+                    <a href="/login">
+            <img src={prevIcon} alt="Previous" height={30} width={30} className="opacity-75 cursor-pointer" />
+          </a>
+                    <h1 className="flex items-start font-semibold gap-1" >Medi<img src={logo} alt="" height="55px" width="55px" />Co</h1>
                 </div>
                 <p className="font-semibold opacity-75 mt-1">Register as {user?.careTaker ? 'Care Taker' : 'Patient'}</p>
             </div>
